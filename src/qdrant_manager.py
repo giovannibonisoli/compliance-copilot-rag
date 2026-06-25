@@ -1,5 +1,5 @@
-from qdrant_client import QdrantClient
-from qdrant_client.models import (
+from src.qdrant_client import QdrantClient
+from src.qdrant_client.models import (
     Distance,
     VectorParams,
     PointStruct
@@ -49,7 +49,9 @@ class QdrantManager:
                 )
             )
 
-        self.client.upsert(
-            collection_name=collection_name,
-            points=points
-        )
+        self.client.upsert(collection_name=collection_name, points=points)
+
+
+    def search(self, collection_name: str, query_vector, limit: int = 5):
+        results = self.client.query_points(collection_name=collection_name, query=query_vector.tolist(), limit=limit)
+        return results.points

@@ -1,7 +1,7 @@
-from parser import load_pdf
-from chunker import chunk_text, Chunk
-from embedder import Embedder
-from qdrant_manager import QdrantManager
+from src.parser import load_pdf
+from src.chunker import chunk_text, Chunk
+from src.embedder import Embedder
+from src.qdrant_manager import QdrantManager
 
 
 COLLECTION_NAME = "compliance_docs"

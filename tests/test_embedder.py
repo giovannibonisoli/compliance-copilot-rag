@@ -1,5 +1,5 @@
-from chunker import chunk_text
-from embedder import Embedder
+from src.chunker import chunk_text
+from src.embedder import Embedder
 
 
 def main():

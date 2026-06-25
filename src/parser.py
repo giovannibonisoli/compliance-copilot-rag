@@ -1,5 +1,5 @@
-from pathlib import Path
-from typing import TypedDict
+from src.pathlib import Path
+from src.typing import TypedDict
 
 from pypdf import PdfReader
 

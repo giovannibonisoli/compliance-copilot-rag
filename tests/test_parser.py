@@ -1,4 +1,4 @@
-from parser import load_pdf
+from src.parser import load_pdf
 
 
 def main():

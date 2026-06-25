@@ -3,7 +3,7 @@ from typing import Sequence
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-from chunker import Chunk
+from src.chunker import Chunk
 
 
 class Embedder:
