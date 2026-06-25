@@ -1,0 +1,14 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Qdrant
+qdrant_data/
+
+# Generated data
+data/processed/
+chunks/
+embeddings/
